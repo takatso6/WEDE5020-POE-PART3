@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - SBU Shisanyama & Carwas> </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="javascript.js">
+</head>
+<body>
+    <header>
+        <img src="images/R.jpg" alt="R" width="450">
+        <h1>SBU Shisanyama & Carwash</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Services</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Make an Enquiry</h2>
+            <p>Book our services or ask any questions using the form below:</p>
+            
+            <form>
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Service Request</legend>
+                    <p>
+                        <label>Service Needed:</label><br>
+                        <input type="radio" id="shisanyama" name="service" value="shisanyama">
+                        <label for="shisanyama">Shisanyama Only</label><br>
+                        <input type="radio" id="carwash" name="service" value="carwash">
+                        <label for="carwash">Carwash Only</label><br>
+                        <input type="radio" id="both" name="service" value="both">
+                        <label for="both">Both Services</label>
+                    </p>
+                    <p>
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date">
+                    </p>
+                    <p>
+                        <label for="time">Preferred Time:</label>
+                        <input type="time" id="time" name="time">
+                    </p>
+                    <p>
+                        <label for="requests">Special Requests:</label><br>
+                        <textarea id="requests" name="requests" rows="4"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Enquiry</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h3>Enquiry Information</h3>
+            <details>
+                <summary>Response Time</summary>
+                <p>We typically respond to enquiries within 2 business hours during our operating times (8am-8pm daily).</p>
+            </details>
+            <details>
+                <summary>Booking Confirmation</summary>
+                <p>All bookings require confirmation from our team. You'll receive an SMS or email once your booking is processed.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>SBU Shisanyama & Carwash | Connecting through food and service</p>
+    </footer>
+</body>
+</html>
